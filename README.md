@@ -1,13 +1,13 @@
-# Grpc Microservice Template
+# gRPC Microservice Template
 
-Go microservice template with gRPC, structured logging, health checks.
+Go microservice template with gRPC, structured logging, health checks, and K8s manifests.
 
 ## Features
 - gRPC server with reflection
 - Structured logging (slog)
-- Health check endpoint
+- Health check and readiness probes
 - Graceful shutdown
-- Docker + K8s manifests
+- Docker + Kubernetes manifests
 
 ## Quick Start
 ```bash
@@ -15,5 +15,4 @@ go run cmd/server/main.go
 grpcurl -plaintext localhost:50051 list
 ```
 
-## License
-MIT
+## License: MIT
